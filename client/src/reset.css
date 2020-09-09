@@ -11,6 +11,7 @@ a:hover,a:focus{text-decoration:none;}
 
 em, address, i {font-style:normal;}
 button {background:transparent; border:0; vertical-align:middle; cursor:pointer;}
+button:focus { outline: 0; }
 
 input[type="text"],input[type="password"],input[type="file"] {display:block; padding:0; background:#fff; border:0; border-radius:0; vertical-align:middle;}
 input[type="text"]:focus { outline: none; }

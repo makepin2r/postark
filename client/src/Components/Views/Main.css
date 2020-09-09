@@ -10,12 +10,26 @@
     padding: 0 12px;
 }
 
-.section-title {
-    font-size: 16px;
+.main-container .container > .content > .wrap {
     width: 100%;
-    border-bottom: 1px solid #eeeeee;
+    font-size: 16px;
     height: 40px;
+    border-bottom: 1px solid #eeeeee;
     line-height: 1;
+}
+
+.section-title {
+    height: 100%;
+    display: inline-block;
+}
+
+.sort-type li { 
+    font-size: 14px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.sort-type li:last-child {
+    margin-right: 0;
 }
 
 

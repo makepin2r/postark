@@ -1,0 +1,8 @@
+.footer button {    
+    color: #888888;
+    padding: 10px;
+    border-radius: 25px;
+}
+.footer button:hover {    
+    background: #eee;
+}

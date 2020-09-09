@@ -6,6 +6,7 @@ import {
   Link
 } from "react-router-dom"
 import LandingPage from './Components/Views/LandingPage'
+import SeriesPage from './Components/Views/SeriesPage/SeriesPage'
 import Header from './Components/Header/Header.js'
 import Footer from './Components/Footer/Footer.js'
 
@@ -22,6 +23,7 @@ class App extends Component {
         <Router>
             <Switch>
               <Route exact path="/" component={() => <LandingPage title={this.state.title} openingDate={this.state.openingDate}/>}/>
+              <Route exact path="/series"  component={() => <SeriesPage title={this.state.title} openingDate={this.state.openingDate}/>}/>
             </Switch>
         </Router>
         <Footer title={this.state.title} />

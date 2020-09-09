@@ -19,6 +19,7 @@ class PostList extends Component {
                 <ul>
                     {list}
                 </ul>
+                <div className="post-list-index"></div> {/* how? */}
             </div>
         )
     }

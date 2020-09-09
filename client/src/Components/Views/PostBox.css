@@ -1,0 +1,51 @@
+.post-box {
+    padding: 30px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.post-box .title {
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.post-box .content {
+    font-size: 14px;
+    color: #888888;
+    padding-bottom: 10px;
+}
+
+.post-box .content .subTitle {
+    font-weight: 700;
+    position: relative;
+    padding-right: 20px;
+}
+
+.post-box .subTitle:after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 14px;
+    background: #cccccc;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.post-box .author-profile {
+    width: 100%;
+}
+
+.post-box .author-profile .profile-pic {
+    width: 36px;
+    height:36px;
+    text-indent: -9999px;
+    background: #ccc;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-box .author-profile date {
+    color: #888888;
+    font-size: 13px;
+}
+
