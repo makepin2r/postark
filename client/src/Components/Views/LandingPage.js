@@ -38,7 +38,9 @@ class LandingPage extends Component {
                 <div className="main-container">
                     <div className="container flex flex-between-v">
                         <div className="content">
-                            <p className="section-title">{/*db.collection.count()*/}{this.state.info.length}개의 포스트</p>
+                        <div className="wrap flex flex-between-v">
+                                <p className="section-title">{this.state.info.length}개의 포스트</p>
+                            </div>
                             <div>
                                 <PostList data={this.state.info} />
                             </div>
