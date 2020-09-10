@@ -1,16 +1,31 @@
 import React, { Component } from 'react'
+import SeriesBox from './SeriesBox'
+import PostBox from '../PostBox';
 
 class SeriesPage extends Component {
     state = {
         series : [
-            // {
-            //     name: 'series1',
-            //     posts: [], // 포스트 아이디로 관리
-            // }
+            {
+                title: 'series1',
+                subTitle: '임시 시리즈',
+                thumbnail:'/client/src/images/thumbnail.jpg',
+                posts: [], // 포스트 아이디로 관리
+            }
         ]
     }
 
     render() {
+        const { series } = this.state;
+
+        const list = series.map(
+            info => (<SeriesBox 
+                title={info.title}
+                subTitle={info.subTitle}
+                thumbnail={info.thumbnail}
+                posts={info.posts}
+                userName={this.props.userName}
+            />)
+        );
         return (
             <div className="main-container">
                 <div className="container flex flex-between-v">
@@ -29,7 +44,7 @@ class SeriesPage extends Component {
                                     <button className="btn btn-dft">새 시리즈 만들기</button>
                                 </div>):
                                 (<div>
-                                    
+                                    {list}
                                 </div>)
                             }
                         </div>

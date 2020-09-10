@@ -11,6 +11,8 @@ import './Components/Header/Header.css'
 import './Components/Footer/Footer.css'
 import './Components/Views/Main.css'
 import './Components/Views/PostBox.css'
+import './Components/Views/Intro/Intro.css'
+import './Components/Views/SeriesPage/SeriesPage.css'
 // import './Components/Views/LandingPage.css'
 
 ReactDOM.render(

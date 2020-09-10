@@ -28,7 +28,8 @@ address{
 }
 
 .container { 
-    max-width: 1072px
+    max-width: 1072px;
+    padding: 0;
 }
 
 .flex {
