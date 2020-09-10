@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
     render() {
@@ -18,9 +19,9 @@ class Header extends Component {
                     </div>
                     <div className="nav-bar">
                         <ul className="flex flex-start-v flex-center-h">
-                            <li><a href="javascript:;">포스트</a></li>
-                            <li><a href="javascript:;">시리즈</a></li>
-                            <li><a href="javascript:;">소개</a></li>
+                            <li><Link to="/">포스트</Link></li>
+                            <li><Link to="/series">시리즈</Link></li>
+                            <li><Link to="/intro">소개</Link></li>
                         </ul>
                     </div>
                 </div>

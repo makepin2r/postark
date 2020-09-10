@@ -10,8 +10,21 @@ body {
     font-size: 14px;
     color: #121212;
 }
+
 address{
     margin-bottom: 0;
+}
+
+.btn {
+    padding: 8px 15px;
+}
+.btn.btn-dft {
+    color: #121212;
+    background: transparent;
+    border: 1px solid #dfdfdf;
+}
+.btn.btn-dft:hover {
+    background:rgba(0, 0, 0, 0.05);
 }
 
 .container { 

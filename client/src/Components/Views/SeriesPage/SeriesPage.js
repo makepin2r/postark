@@ -3,10 +3,10 @@ import React, { Component } from 'react'
 class SeriesPage extends Component {
     state = {
         series : [
-            {
-                name: 'series1',
-                posts: [], // 포스트 아이디로 관리
-            }
+            // {
+            //     name: 'series1',
+            //     posts: [], // 포스트 아이디로 관리
+            // }
         ]
     }
 
@@ -22,9 +22,16 @@ class SeriesPage extends Component {
                                     <li>중요도 순</li>
                                 </ul>
                             </div>
-                            <div>
-                                시리즈가 없습니다.
-                            </div>
+                            {
+                                this.state.series.length === 0 ? 
+                                (<div className="no-content-box">
+                                    시리즈가 없습니다.
+                                    <button className="btn btn-dft">새 시리즈 만들기</button>
+                                </div>):
+                                (<div>
+                                    
+                                </div>)
+                            }
                         </div>
                         <div className="side-bar">
                             <div className="section-profile">
