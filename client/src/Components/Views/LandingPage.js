@@ -1,41 +1,45 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import PostList from './PostList'
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
 
 
 
 class LandingPage extends Component {
     state = {
         info : [
-            // {
-            //     id: 0,
-            //     title: 'article 1',
-            //     subTitle: 'test',
-            //     content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-            //     date: '2020-09-09',
-            //     author: '안녕로봇'
-            // },
-            // {
-            //     id: 1,
-            //     title: 'article 2',
-            //     subTitle: 'test',
-            //     content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-            //     date: '2020-09-09',
-            //     author: '안녕로봇'
-            // },
-            // {
-            //     id: 2,
-            //     title: 'article 3',
-            //     subTitle: 'test',
-            //     content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-            //     date: '2020-09-09',
-            //     author: '안녕로봇'
-            // }
+            {
+                id: 0,
+                title: 'article 1',
+                subTitle: 'test',
+                content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                date: '2020-09-09',
+                author: '안녕로봇'
+            },
+            {
+                id: 1,
+                title: 'article 2',
+                subTitle: 'test',
+                content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                date: '2020-09-09',
+                author: '안녕로봇'
+            },
+            {
+                id: 2,
+                title: 'article 3',
+                subTitle: 'test',
+                content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                date: '2020-09-09',
+                author: '안녕로봇'
+            }
         ]
     }
 
     render() {
         const { title, subTitle, introduction, openingDate } = this.props;
         return (
+                <Fragment>
+                    <Header title={this.props.title} subTitle={this.props.subTitle} />
                 <div className="main-container">
                     <div className="container flex flex-between-v">
                         <div className="content">
@@ -70,6 +74,8 @@ class LandingPage extends Component {
                         </div>
                     </div>
                 </div>
+                <Footer title={this.props.title} />
+                </Fragment>
 
         )
     }

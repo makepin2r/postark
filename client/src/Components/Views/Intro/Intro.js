@@ -1,9 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
+import Header from '../../Header/Header'
+import Footer from '../../Footer/Footer'
 
 class Intro extends Component {
     render() {
         const { title, introduction, openingDate, subscriber  } = this.props;
         return (
+            <Fragment>
+                <Header title={this.props.title} subTitle={this.props.subTitle} />
             <div className="main-container section--intro">
                 <div className="container">
                     <div className="intro-box postype">
@@ -23,6 +27,8 @@ class Intro extends Component {
                     </div>
                 </div>
             </div>
+            <Footer title={this.props.title} />
+            </Fragment>
         ) 
     }
 }

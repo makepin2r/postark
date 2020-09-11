@@ -1,9 +1,19 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, Router } from 'react-router-dom';
 
 class Header extends Component {
+
+    state = {
+        curIndex: 0, // cur Index - post, series, introduction
+    }
+
+    handleIndex = (e) => {
+        console.log(e.target.parentNode)       ;
+    }
+
     render() {
         const {title, subTitle} = this.props;
+
 
         return (
             <div className="header">
@@ -18,10 +28,10 @@ class Header extends Component {
                         </div>
                     </div>
                     <div className="nav-bar">
-                        <ul className="flex flex-start-v flex-center-h">
-                            <li><Link to="/">포스트</Link></li>
-                            <li><Link to="/series">시리즈</Link></li>
-                            <li><Link to="/intro">소개</Link></li>
+                        <ul className="flex flex-start-v flex-center-h" onClick={this.handleIndex}>
+                            <li><Link to={'/'} >포스트</Link></li>
+                            <li><Link to={'/series'}>시리즈</Link></li>
+                            <li><Link to={'/intro'}>소개</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -29,5 +39,6 @@ class Header extends Component {
         )
     }
 }
+
 
 export default Header

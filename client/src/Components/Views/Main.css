@@ -17,6 +17,18 @@
     box-sizing: border-box;
 }
 
+.post-container {
+    padding: 20px 0;
+    width: 100%;
+    min-height: calc(100vh - 380px);
+    display: flex;
+    justify-content: center;
+}
+
+.post-container > .container {
+    width: 700px;
+}
+
 .main-container .container > .content {
     width: 66.667%;
     min-height: 340px;
