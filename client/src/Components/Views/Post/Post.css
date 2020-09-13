@@ -20,12 +20,25 @@
     justify-content: center;
 }
 
+.post-container {
+    padding: 148px 20px;
+    width: 100%;
+    min-height: calc(100vh - 380px);
+    display: flex;
+    justify-content: center;
+}
+
+.post-container > .container {
+    display: block;
+}
+
 .gnb-container {
     width: 100%;
     max-width: 1072px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 16px;
 }
 
 .gnb-container > div, .gnb-container .icon-list {
@@ -34,7 +47,7 @@
     align-items: center;
 }
 
-.gnb-container .icon-list li {
+.gnb-container .icon-list li, .gnb-container .btn-hover {
     text-indent: -9999px;
     width: 40px;
     height: 40px;
@@ -43,20 +56,53 @@
     margin-right: 5px;
     cursor: pointer;
 }
-.gnb-container .icon-list li:last-child {
+.gnb-container .icon-list li:last-child, .gnb-container .btn-hover {
     margin-right: 0;
 }
 .gnb-container .icon-list li.search {
-    background-image: url('../../../images/ico-search.png') center no-repeat;
-    background-size: 35px auto;
+    background: url('../../../images/ico-search.png') center no-repeat;
+    background-size:20px auto;
 }
-.gnb-container .icon-list li:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+.gnb-container .icon-list li.noti {
+    background: url('../../../images/ico-bell.png') center no-repeat;
+    background-size:20px auto;
+}
+.gnb-container .icon-list li.mypage {
+    background: url('../../../images/user-default.png') center no-repeat;
+    background-size:32px auto;
 }
 
+.gnb-container .icon-list li.bookmark {
+    background: url('../../../images/ico-bookmark.png') center no-repeat;
+    background-size:20px auto;
+}
 
+.gnb-container .icon-list li.settings {
+    background: url('../../../images/ico-settings.png') center no-repeat;
+    background-size:20px auto;
+}
 
-.gnb-container h1 {
+.gnb-container button.prev-article {
+    background: url('../../../images/caret-right.png') center no-repeat;
+    transform: scaleX(-1);
+    background-size:10px auto;
+}
+
+.gnb-container button.next-article {
+    background: url('../../../images/caret-right.png') center no-repeat;
+    background-size:10px auto;
+}
+
+.gnb-container button.home {
+    background: url('../../../images/arrow-prev.png') center no-repeat;
+    background-size:16px auto;
+}
+
+.gnb-container .icon-list li:hover, .gnb-container .btn-hover:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.gnb-container .postype-title {
     padding-left: 32px;
     font-size: 20px;
     font-weight: 700;
@@ -80,3 +126,9 @@
     border-radius : 3px;
     background: #fff;
 }
+
+.gnb-container .article-title {
+    font-size: 17px;
+    margin: 0 3px;
+}
+
