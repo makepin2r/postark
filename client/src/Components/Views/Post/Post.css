@@ -26,6 +26,7 @@
     min-height: calc(100vh - 380px);
     display: flex;
     justify-content: center;
+    box-sizing: content-box;
 }
 
 .post-container > .container {
@@ -130,5 +131,85 @@
 .gnb-container .article-title {
     font-size: 17px;
     margin: 0 3px;
+}
+
+.title-box {
+    padding: 48px 0 24px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.title-box h1 {
+    font-size: 32px;
+}
+
+.title-box .sub-title {
+    font-size: 18px;
+}
+
+.title-box .profile-box {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.title-box .profile-box img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.title-box .profile-box {
+    color: #888888;
+}
+
+.title-box .profile-box .user-name {
+    color: #121212;
+    font-weight: 700;
+}
+
+.title-box .profile-box date {
+    position: relative;
+    padding-right: 5px;
+}
+
+.title-box .profile-box date:after {
+    content:" \00B7";
+}
+
+.post-container .content-box {
+    padding: 24px 0 110px;
+    font-size: 16px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.post-container .postype-banner {
+    height: 60px;
+    box-sizing: content-box;
+    padding: 24px 24px 24px 100px;
+    background: #f7f7f7;
+    border-radius: 7px;
+    margin-top: 16px;
+    font-size: 13px;
+    color: #888888;
+    position: relative;
+}
+
+.post-container .postype-banner:before {
+    content:"";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #007bff;
+    border-radius: 7px;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+}
+
+.post-container .postype-banner .title {
+    font-size: 17px;
+    color: #121212;
+    padding-top: 10px;
 }
 

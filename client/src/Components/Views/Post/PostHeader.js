@@ -11,7 +11,7 @@ class PostHeader extends Component {
                     <div className="gnb-container">
                         <div>
                             <span className="logo-box"><Link to='/'>홈으로</Link></span>
-                            <p className="postype-title">{title}</p>
+                            <p className="postype-title"><Link to='/'>{title}</Link></p>
                         </div>
                         <div>
                             <ul className="icon-list">
@@ -24,16 +24,16 @@ class PostHeader extends Component {
                 </div>
                 <div className="post-nav-box">
                     <div className="gnb-container">
-                        <button className="btn-hover home">홈으로 가기</button>
+                        <button className="btn-hover home"><Link to="/">홈으로 가기</Link></button>
                         <div className="nav-wrap">
                             <button className="btn-hover prev-article">이전글</button>
                             <p className="article-title">제목 없음</p>
                             <button className="btn-hover next-article">다음글</button>
                         </div>
                         <ul className="icon-list">
-                                <li className="bookmark">북마크하기</li>
-                                <li className="settings">설정</li>
-                            </ul>
+                            <li className="bookmark">북마크하기</li>
+                            <li className="settings">설정</li>
+                        </ul>
                     </div>
                 </div>
             </Fragment>
