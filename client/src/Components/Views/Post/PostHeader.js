@@ -28,7 +28,7 @@ class PostHeader extends Component {
                         <div className="nav-wrap">
                             <button className="btn-hover prev-article">이전글</button>
                             <p className="article-title">제목 없음</p>
-                            <button className="btn-hover next-article">다음글</button>
+                            <button className="btn-hover next-article" disabled="disabled">다음글</button>
                         </div>
                         <ul className="icon-list">
                             <li className="bookmark">북마크하기</li>

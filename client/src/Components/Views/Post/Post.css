@@ -21,7 +21,7 @@
 }
 
 .post-container {
-    padding: 148px 20px;
+    padding: 148px 0 64px;
     width: 100%;
     min-height: calc(100vh - 380px);
     display: flex;
@@ -110,7 +110,7 @@
     color: #ffffff;
     position: relative;
 }
-.gnb-container h1::before {
+.gnb-container .postype-title:before {
     content:"";
     display: block;
     width: 1px;
@@ -135,7 +135,7 @@
 
 .title-box {
     padding: 48px 0 24px;
-    border-bottom: 1px solid #eeeeee;
+    /* border-bottom: 1px solid #eeeeee; */
 }
 
 .title-box h1 {
@@ -213,3 +213,47 @@
     padding-top: 10px;
 }
 
+.post-nav-box .nav-wrap .btn-hover:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.post-nav-box .nav-wrap .btn-hover:disabled:hover {
+    background-color: transparent;
+}
+
+.comment-container .container {
+    padding-top: 80px;
+}
+
+.comment-container textarea {
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 5px;
+    border-color: #dddddd;
+}
+
+.comment-container input[type="submit"] {
+    background-color: #364d48;
+    border-radius: 5px;
+    padding: 7px 15px;
+    color :#ffffff;
+}
+
+.comment-container .container > p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.comment-container .radio-box {
+    padding-top: 20px;
+    border-top: 2px solid #DEDEDE;
+}
+
+.comment-container input[type="radio"] + label {
+    padding: 0 15px 0 10px;
+    font-size: 14px;
+}

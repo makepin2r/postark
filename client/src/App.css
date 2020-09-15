@@ -49,6 +49,10 @@ address{
     justify-content: flex-start;
 }
 
+.flex-end-v {
+    justify-content: flex-end;
+}
+
 .flex-center-h {
     align-items: center;
 }

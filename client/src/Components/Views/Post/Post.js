@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import PostHeader from './PostHeader'
 import Footer from '../../Footer/Footer'
 import UserPic from '../../../images/user-default.png'
+import Comment from './Comment'
 
 class Post extends Component {
     render() {
@@ -38,6 +39,7 @@ class Post extends Component {
                             <p className="title">{title}</p>
                             <span>구독자 0</span>
                         </div>
+                        <Comment />
                     </div>
                 </div>
                 <Footer title={title}/>
